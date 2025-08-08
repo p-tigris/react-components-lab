@@ -1,5 +1,5 @@
 import './WeatherForecast.css';
-import WeatherIcon from './WeatherIcon';
+import WeatherIcon from '../WeatherIcon/WeatherIcon';
 
 const WeatherForecast = (props) => {
     const { forecast } = props
