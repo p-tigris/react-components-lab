@@ -1,14 +1,14 @@
 import './WeatherForecast.css';
 import WeatherIcon from '../WeatherIcon/WeatherIcon';
+import WeatherData from '../WeatherData/WeatherData';
 
 const WeatherForecast = (props) => {
     const { forecast } = props
     return (
         <div className="weather">
-            <h2>{forecast.day}</h2>
-            <WeatherIcon src={forecast.img} alt={forecast.imgAlt}/>
-            <p><span>conditions: </span>{forecast.conditions}</p>
-            <p><span>time: </span>{forecast.time}</p>
+            <WeatherData day={forecast.day} />
+            <WeatherIcon src={forecast.img} alt={forecast.imgAlt} />
+            <WeatherData conditions={forecast.conditions} time={forecast.time} />
         </div>
     ) 
 }
